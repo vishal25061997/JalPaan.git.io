@@ -12,7 +12,7 @@ return (
       <span>Total Amount</span>
       <span>35.64</span>  
     </div>
-    <div className={classes.action}>
+    <div className={classes.actions}>
         <button className={classes["button--alt"]} onClick={props.onClose}>Close</button>
         <button className={classes.button}>Order</button>
     </div>
