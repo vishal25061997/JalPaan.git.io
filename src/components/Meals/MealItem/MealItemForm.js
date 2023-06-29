@@ -17,7 +17,7 @@ const submitHandler = event =>{
   enteredAmountNumber> 5) 
   {
     setAmountIsValid(false)
-    return
+    return;
   }
   
   props.onAddToCart(enteredAmountNumber)
@@ -35,7 +35,8 @@ return (
      max:'5',
      step:'1',
      defaultValue:'1'
-   }}/>
+   }}
+   />
    <button>+ Add</button>
    {!amountIsValid && <p> Please enter a valid amount (1-5)</p>}
 </form>
